@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wl,--dependency-file=CMakeFiles/esercitazione1_esempio.dir/link.d CMakeFiles/esercitazione1_esempio.dir/print_args.cpp.o -o esercitazione1_esempio

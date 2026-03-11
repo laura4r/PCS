@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wl,--dependency-file=CMakeFiles/esercitazione1_esercizio.dir/link.d CMakeFiles/esercitazione1_esercizio.dir/medieT.cpp.o -o esercitazione1_esercizio
