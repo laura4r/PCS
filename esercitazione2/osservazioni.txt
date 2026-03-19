@@ -1,0 +1,12 @@
+Il programma stampa
+
+x = 0
+Indirizzo x: 0x7ffdb650a460
+Indirizzo y: 0x7ffdb650a45c
+ad: 0x7ffdb650a490
+af: 0x7ffdb650a470
+ai: 0x7ffdb650a464
+
+Osservando gli indirizzi di x e y, si nota che, a causa della loro "distanza", l'istruzione a riga 12 
+(&y)[1] = 0;
+modifica il dato in posizione &y + 1*4, dove 4=sizeof(float) è la dimensione di y. Eseguendo la somma con gli indirizzi, però, si nota che 0x7ffdb650a45c + 4 = 0x7ffdb650a460, che è l'indirizzo di x. Ciò significa che l'istruzione alla riga 12 modifica il dato memorizzato all'indirizzo di x, e quindi quando il codice stampa x non "trova" il valore dichiarato int x = 1 ma quello modificato dalla riga 12
