@@ -1,0 +1,3 @@
+Dai test emerge che gli algoritmi con complessità quadratica risultano più lenti di quelli logaritmici al crescere della dimensione del vettore.
+L'ordinamento implementato da std::sort risulta in generale più efficiente degli altri, come ci possiamo aspettare dato che è l'algoritmo implementato nativamente quindi nasconde varie forme di ottimizzazione.
+In linea con l'andamento di n^2 e log(n), gli algoritmi quadratici (e in particolare insertion sort) possono risultare più veloci per vettori piccoli, ma questa tendenza si inverte oltre una certa soglia sulla dimensione dei vettori
